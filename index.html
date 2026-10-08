@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+   
+
+    <section id="studentSection">
+
+        <h1>College Event Registration</h1>
+
+        <h2>Student Credentials</h2>
+
+        <form id="studentForm">
+
+            <label>Student Name</label>
+            <input type="text" id="studentName">
+
+            <label>USN</label>
+            <input type="text" id="usn">
+
+            <label>Email</label>
+            <input type="email" id="email">
+
+            <label>Phone Number</label>
+            <input type="text" id="phone">
+
+            <label>Department</label>
+            <input type="text" id="department">
+
+            <button type="submit">Continue</button>
+
+        </form>
+
+        <p id="studentError"></p>
+
+    </section>
+
+
+  
+
+    <section id="dashboardSection">
+
+        <h1>Event Dashboard</h1>
+
+        <div class="events">
+
+
+            <div class="event-card">
+
+                <h2>Dandiya Night</h2>
+
+                <p>Enjoy an energetic evening of music and dance.</p>
+
+                <p><b>Date:</b> 18 October 2026</p>
+
+                <p><b>Venue:</b> College Open Ground</p>
+
+                <button class="eventBtn"
+                        data-event="Dandiya Night">
+                    Register
+                </button>
+
+            </div>
+
+
+            
+
+            <div class="event-card">
+
+                <h2>Prom Night</h2>
+
+                <p>An evening of music, dance and celebration.</p>
+
+                <p><b>Date:</b> 24 October 2026</p>
+
+                <p><b>Venue:</b> College Auditorium</p>
+
+                <button class="eventBtn"
+                        data-event="Prom Night">
+                    Register
+                </button>
+
+            </div>
+
+
+            
+
+            <div class="event-card">
+
+                <h2>Hunt</h2>
+
+                <p>An exciting treasure hunt challenge.</p>
+
+                <p><b>Date:</b> 28 October 2026</p>
+
+                <p><b>Venue:</b> College Campus</p>
+
+                <button class="eventBtn"
+                        data-event="Hunt">
+                    Register
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+
+    <section id="registrationSection">
+
+        <h1>Event Registration</h1>
+
+        <h3>
+            Selected Event:
+            <span id="selectedEvent"></span>
+        </h3>
+
+        <form id="registrationForm">
+
+            <label>Student Name</label>
+            <input type="text" id="regName">
+
+            <label>USN</label>
+            <input type="text" id="regUsn">
+
+            <label>Event Role</label>
+
+            <select id="role">
+
+                <option value="">Select Role</option>
+
+                <option value="Participant">
+                    Participant
+                </option>
+
+                <option value="Volunteer">
+                    Volunteer
+                </option>
+
+            </select>
+
+
+            <label>Year</label>
+
+            <select id="year">
+
+                <option value="">Select Year</option>
+
+                <option value="1st Year">
+                    1st Year
+                </option>
+
+                <option value="2nd Year">
+                    2nd Year
+                </option>
+
+                <option value="3rd Year">
+                    3rd Year
+                </option>
+
+                <option value="4th Year">
+                    4th Year
+                </option>
+
+            </select>
+
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+        </form>
+
+        <p id="registrationMessage"></p>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
